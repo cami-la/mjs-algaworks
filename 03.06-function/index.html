@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function greet() {
+      console.log(this);
+    }
+
+    const me = {
+      name: "Daniel",
+      greet () {
+        console.log(this);
+        return "batata";
+      }
+    }
+
+    function getRemaingYearsToMajority(age) {
+      return 18 - age;
+    }
+
+    const remainingYears = getRemaingYearsToMajority(15);
+    
+  </script>
+</body>
+</html>

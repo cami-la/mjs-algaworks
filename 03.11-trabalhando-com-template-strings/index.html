@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const name = "Julio";
+    const age = 32;
+
+    const html2 = "\
+      <ul>\
+        <li>\
+          ${name}\
+        </li>\
+        <li>\
+          ${age}\
+        </li>\
+      </ul>\
+    ";
+
+
+    const html = `
+      <ul>
+        <li>
+          ${name}
+        </li>
+        <li>
+          ${age}
+        </li>
+      </ul>
+    `;
+    
+    console.log(html);
+    console.log(html2);
+  </script>
+</body>
+</html>

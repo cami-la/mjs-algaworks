@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const interval = setTimeout(() => {
+      console.log("run");
+    }, 5000);
+
+    setTimeout(() => {
+      console.log("stop!");
+      clearTimeout(interval);
+    }, 2000);
+  </script>
+</body>
+</html>

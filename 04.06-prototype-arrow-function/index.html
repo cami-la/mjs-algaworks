@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class Human {
+      hungry = true;
+      awake = true;
+
+      eat() {
+        hungry = false;
+      }
+    }
+
+    const person = new Human();
+    
+    Human.prototype.sleep = function () {
+      this.awake = false;
+    }
+
+    person.sleep();
+
+  </script>
+</body>
+</html>

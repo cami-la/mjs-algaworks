@@ -6,19 +6,28 @@
 </head>
 <body>
   <script>
-    class Human {
+
+    class Animal {
+      sex;
+
+      constructor(props) {
+        this.sex = props.sex;
+      }
+
+    }
+
+    class Human extends Animal{
       hungry = true;
       
       name;
       age;
-      sex;
 
       constructor(props) {
+        super(props);
         if(!props.name)
           throw Error("Name é obrigatório");
         this.name = props.name;
         this.age = props.age;
-        this.sex = props.sex;
       }
 
       eat () {
@@ -27,7 +36,7 @@
     }
 
     const person = new Human({
-      //name: "Lucas",
+      name: "Lucas",
       age: 34,
       sex: "male"
     });

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spread Operator em Funções</title>
+</head>
+<body>
+  <script>
+    const ingredients = ["ovo", "presunto"];
+    const spices = ["sal", "pimenta"];
+
+    ingredients.push.apply(ingredients, spices);
+    //ingredients.push(...spices);
+
+  </script>
+</body>
+</html>

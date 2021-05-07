@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spread Operator</title>
+</head>
+<body>
+  <script>
+    function createUSer (name, age, ...contacts){
+      //const args = Array.from(arguments);
+      return{
+        name,
+        age,
+        contacts: [contact1, contact2, contact3]
+      }
+    }
+  </script>
+</body>
+</html>

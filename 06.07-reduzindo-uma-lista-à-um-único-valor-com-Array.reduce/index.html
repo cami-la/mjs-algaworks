@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Array.filter</title>
+  <title>Array.reduce</title>
 </head>
 <body>
   <script>
@@ -14,9 +14,16 @@
       {name: "Marcos", grade: 5},
     ];
 
-    const flushed = students.filter(pupil => {
-      return pupil.grade >= 6;
-    });
+    const classroomTotalPoints = students.reduce(
+      (prev, current) => {
+        console.log(prev);
+        console.log(current);
+        return prev + current.grade;
+      },0
+    );
+    
+    //let totalGrade = 0;
+    //students.forEach(pupil => totalGrade += pupil.grade);
 
   </script>
 </body>

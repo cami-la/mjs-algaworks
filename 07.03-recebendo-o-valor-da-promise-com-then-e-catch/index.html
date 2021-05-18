@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Promise</title>
+</head>
+<body>
+  <script>
+    function handleClick() {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+        reject("erro inesperado")
+      }, 5000)
+    });
+    }
+    
+    const result = handleClick()
+      .then(res => {
+        console.log(123 === res);
+        console.log("Finalizou");
+        return "batata";
+      })
+      .catch(err => {
+        console.log("houve um erro");
+        console.log(err);
+        return "batata2";
+      });
+  </script>
+</body>
+</html>

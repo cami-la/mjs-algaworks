@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Promises</title>
+</head>
+<body>
+  <script>
+    fetch("http://jsonplaceholder.typicode.com/todos/1")
+    .then( (res) => {
+      const data =  res.json()
+    .then(data => console.log(data))
+    });
+  </script>
+</body>
+</html>
